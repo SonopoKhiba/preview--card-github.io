@@ -10,6 +10,8 @@
 
 body {
     background-color: hsl(47, 88%, 63%);
+    width: clamp(375px, 80vw, 1440px);
+    margin: 0 auto;
     display: flex;
     /* Layout model */
     flex-direction: column;
@@ -17,15 +19,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    
     font-family: 'Figtree', sans-serif;
     gap: 10px;
 }
 
 .blog-card {
     background-color: hsl(0, 0%, 100%);
-    padding: 20px;
-    width: 300px;
+    width: clamp(280px, 40vw, 350px);
+    padding: clamp(16px, 3vw, 24px);
+    max-width: 375px;
     /* height: 450px; */
     display: flex;
     flex-direction: column;
@@ -62,7 +65,7 @@ body {
 
 .blog-card .description {
     color: hsl(0, 0%, 42%);
-    font-size: 16px;
+    font-size: clamp(16px, 2.8vw, 16px);
 }
 
 .author {
