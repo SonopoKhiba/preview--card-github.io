@@ -19,25 +19,25 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Figtree', sans-serif;
+    gap: 10px;
 }
 
 .blog-card {
     background-color: hsl(0, 0%, 100%);
     padding: 20px;
     width: 300px;
-    /* height: ; */
+    /* height: 450px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: left;
     border: black 1px solid;
     box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
     border-radius: 15px;
+    gap: 5px;
 }
 
 .blog-card img {
-    width: 300px;
+    width: 100%;
     border-radius: 10px;
 
 }
@@ -55,25 +55,31 @@ body {
     top: 500px;
 }
 
-.text {
-    text-align: left;
-    font-size: 16px;
-
+.blog-card .title:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
 }
 
 .blog-card .description {
     color: hsl(0, 0%, 42%);
+    font-size: 16px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
 }
 
 .author img {
     width: 40px;
-    position: fixed;
-    left: 490px;
-    bottom: 70px;
+    border-radius: 50%;
+    position: static;
 }
 
 .author p {
-    position: fixed;
-    left: 540px;
-    bottom: 65px;
+    position: static;
+    font-size: 16px;
+    font-weight: bold;
 }
